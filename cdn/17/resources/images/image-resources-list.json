@@ -1,0 +1,30 @@
+{
+  "1690997039393": {
+    "originalName": "Baltimore.jpg",
+    "fileName": "1690997039393.jpg",
+    "size": 3198522,
+    "url": "${appResourceUrl}/images/widget_93/1690997039393.jpg",
+    "created": 1690997039393,
+    "resourcesPrefix": "images/widget_93",
+    "referedIds": [],
+    "originId": "1690997039393",
+    "fileFormat": "image/jpeg",
+    "isUseCompress": false,
+    "originalWidth": 5958,
+    "originalHeight": 2183
+  },
+  "1691022478232": {
+    "originalName": "OEM.png",
+    "fileName": "1691022478232.png",
+    "size": 44629,
+    "url": "${appResourceUrl}/images/widget_92/1691022478232.png",
+    "created": 1691022478232,
+    "resourcesPrefix": "images/widget_92",
+    "referedIds": [],
+    "originId": "1691022478232",
+    "fileFormat": "image/png",
+    "isUseCompress": false,
+    "originalWidth": 200,
+    "originalHeight": 209
+  }
+}

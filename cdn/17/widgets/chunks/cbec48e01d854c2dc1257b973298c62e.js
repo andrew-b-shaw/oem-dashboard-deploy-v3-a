@@ -1,0 +1,31 @@
+"use strict";
+(self["webpackChunkexb_client"] = self["webpackChunkexb_client"] || []).push([["node_modules_arcgis_core_rest_query_operations_queryAttachments_js"],{
+
+/***/ "./node_modules/@arcgis/core/rest/query/operations/queryAttachments.js":
+/*!*****************************************************************************!*\
+  !*** ./node_modules/@arcgis/core/rest/query/operations/queryAttachments.js ***!
+  \*****************************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "executeAttachmentQuery": () => (/* binding */ c),
+/* harmony export */   "fetchAttachments": () => (/* binding */ m),
+/* harmony export */   "processAttachmentQueryResult": () => (/* binding */ a)
+/* harmony export */ });
+/* harmony import */ var _kernel_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../kernel.js */ "./node_modules/@arcgis/core/kernel.js");
+/* harmony import */ var _request_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../request.js */ "./node_modules/@arcgis/core/request.js");
+/* harmony import */ var _core_urlUtils_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../core/urlUtils.js */ "./node_modules/@arcgis/core/core/urlUtils.js");
+/* harmony import */ var _operations_urlUtils_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../operations/urlUtils.js */ "./node_modules/@arcgis/core/rest/operations/urlUtils.js");
+/* harmony import */ var _support_AttachmentInfo_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../support/AttachmentInfo.js */ "./node_modules/@arcgis/core/rest/query/support/AttachmentInfo.js");
+/*
+All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+*/
+function s(t){const o=t.toJSON();return o.attachmentTypes&&(o.attachmentTypes=o.attachmentTypes.join(",")),o.keywords&&(o.keywords=o.keywords.join(",")),o.globalIds&&(o.globalIds=o.globalIds.join(",")),o.objectIds&&(o.objectIds=o.objectIds.join(",")),o.size&&(o.size=o.size.join(",")),o}function a(o,n){const s={};for(const a of n){const{parentObjectId:n,parentGlobalId:c,attachmentInfos:m}=a;for(const a of m){const{id:m}=a,p=(0,_core_urlUtils_js__WEBPACK_IMPORTED_MODULE_2__.addProxy)((0,_kernel_js__WEBPACK_IMPORTED_MODULE_0__.addTokenParameter)(`${o.path}/${n}/attachments/${m}`)),i=_support_AttachmentInfo_js__WEBPACK_IMPORTED_MODULE_4__["default"].fromJSON(a);i.set({url:p,parentObjectId:n,parentGlobalId:c}),s[n]?s[n].push(i):s[n]=[i]}}return s}function c(t,e,r){let a={query:(0,_operations_urlUtils_js__WEBPACK_IMPORTED_MODULE_3__.mapParameters)({...t.query,f:"json",...s(e)})};return r&&(a={...r,...a,query:{...r.query,...a.query}}),(0,_request_js__WEBPACK_IMPORTED_MODULE_1__["default"])(t.path+"/queryAttachments",a).then((t=>t.data.attachmentGroups))}async function m(t,e,n){const{objectIds:r}=e,s=[];for(const a of r)s.push((0,_request_js__WEBPACK_IMPORTED_MODULE_1__["default"])(t.path+"/"+a+"/attachments",n));return Promise.all(s).then((t=>r.map(((o,e)=>({parentObjectId:o,attachmentInfos:t[e].data.attachmentInfos})))))}
+
+
+/***/ })
+
+}]);
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoid2lkZ2V0cy9jaHVua3MvY2JlYzQ4ZTAxZDg1NGMyZGMxMjU3Yjk3MzI5OGM2MmUuanMiLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUN3UCxjQUFjLG1CQUFtQiw4UEFBOFAsZ0JBQWdCLFdBQVcsa0JBQWtCLE1BQU0sb0RBQW9ELEdBQUcsa0JBQWtCLE1BQU0sS0FBSyxLQUFLLDJEQUFDLENBQUMsNkRBQUMsSUFBSSxPQUFPLEdBQUcsRUFBRSxlQUFlLEVBQUUsTUFBTSwyRUFBVSxJQUFJLE9BQU8sd0NBQXdDLDhCQUE4QixTQUFTLGtCQUFrQixPQUFPLE1BQU0sc0VBQUMsRUFBRSw0QkFBNEIsR0FBRyxjQUFjLGlCQUFpQix1QkFBdUIsRUFBRSx1REFBQyxrRUFBa0Usd0JBQXdCLE1BQU0sWUFBWSxRQUFRLHdCQUF3Qix1REFBQyxpQ0FBaUMsK0NBQStDLDJEQUEyRCxNQUFrRyIsInNvdXJjZXMiOlsid2VicGFjazovL2V4Yi1jbGllbnQvLi9ub2RlX21vZHVsZXMvQGFyY2dpcy9jb3JlL3Jlc3QvcXVlcnkvb3BlcmF0aW9ucy9xdWVyeUF0dGFjaG1lbnRzLmpzIl0sInNvdXJjZXNDb250ZW50IjpbIi8qXG5BbGwgbWF0ZXJpYWwgY29weXJpZ2h0IEVTUkksIEFsbCBSaWdodHMgUmVzZXJ2ZWQsIHVubGVzcyBvdGhlcndpc2Ugc3BlY2lmaWVkLlxuU2VlIGh0dHBzOi8vanMuYXJjZ2lzLmNvbS80LjI3L2VzcmkvY29weXJpZ2h0LnR4dCBmb3IgZGV0YWlscy5cbiovXG5pbXBvcnR7YWRkVG9rZW5QYXJhbWV0ZXIgYXMgdH1mcm9tXCIuLi8uLi8uLi9rZXJuZWwuanNcIjtpbXBvcnQgbyBmcm9tXCIuLi8uLi8uLi9yZXF1ZXN0LmpzXCI7aW1wb3J0e2FkZFByb3h5IGFzIGV9ZnJvbVwiLi4vLi4vLi4vY29yZS91cmxVdGlscy5qc1wiO2ltcG9ydHttYXBQYXJhbWV0ZXJzIGFzIG59ZnJvbVwiLi4vLi4vb3BlcmF0aW9ucy91cmxVdGlscy5qc1wiO2ltcG9ydCByIGZyb21cIi4uL3N1cHBvcnQvQXR0YWNobWVudEluZm8uanNcIjtmdW5jdGlvbiBzKHQpe2NvbnN0IG89dC50b0pTT04oKTtyZXR1cm4gby5hdHRhY2htZW50VHlwZXMmJihvLmF0dGFjaG1lbnRUeXBlcz1vLmF0dGFjaG1lbnRUeXBlcy5qb2luKFwiLFwiKSksby5rZXl3b3JkcyYmKG8ua2V5d29yZHM9by5rZXl3b3Jkcy5qb2luKFwiLFwiKSksby5nbG9iYWxJZHMmJihvLmdsb2JhbElkcz1vLmdsb2JhbElkcy5qb2luKFwiLFwiKSksby5vYmplY3RJZHMmJihvLm9iamVjdElkcz1vLm9iamVjdElkcy5qb2luKFwiLFwiKSksby5zaXplJiYoby5zaXplPW8uc2l6ZS5qb2luKFwiLFwiKSksb31mdW5jdGlvbiBhKG8sbil7Y29uc3Qgcz17fTtmb3IoY29uc3QgYSBvZiBuKXtjb25zdHtwYXJlbnRPYmplY3RJZDpuLHBhcmVudEdsb2JhbElkOmMsYXR0YWNobWVudEluZm9zOm19PWE7Zm9yKGNvbnN0IGEgb2YgbSl7Y29uc3R7aWQ6bX09YSxwPWUodChgJHtvLnBhdGh9LyR7bn0vYXR0YWNobWVudHMvJHttfWApKSxpPXIuZnJvbUpTT04oYSk7aS5zZXQoe3VybDpwLHBhcmVudE9iamVjdElkOm4scGFyZW50R2xvYmFsSWQ6Y30pLHNbbl0/c1tuXS5wdXNoKGkpOnNbbl09W2ldfX1yZXR1cm4gc31mdW5jdGlvbiBjKHQsZSxyKXtsZXQgYT17cXVlcnk6bih7Li4udC5xdWVyeSxmOlwianNvblwiLC4uLnMoZSl9KX07cmV0dXJuIHImJihhPXsuLi5yLC4uLmEscXVlcnk6ey4uLnIucXVlcnksLi4uYS5xdWVyeX19KSxvKHQucGF0aCtcIi9xdWVyeUF0dGFjaG1lbnRzXCIsYSkudGhlbigodD0+dC5kYXRhLmF0dGFjaG1lbnRHcm91cHMpKX1hc3luYyBmdW5jdGlvbiBtKHQsZSxuKXtjb25zdHtvYmplY3RJZHM6cn09ZSxzPVtdO2Zvcihjb25zdCBhIG9mIHIpcy5wdXNoKG8odC5wYXRoK1wiL1wiK2ErXCIvYXR0YWNobWVudHNcIixuKSk7cmV0dXJuIFByb21pc2UuYWxsKHMpLnRoZW4oKHQ9PnIubWFwKCgobyxlKT0+KHtwYXJlbnRPYmplY3RJZDpvLGF0dGFjaG1lbnRJbmZvczp0W2VdLmRhdGEuYXR0YWNobWVudEluZm9zfSkpKSkpfWV4cG9ydHtjIGFzIGV4ZWN1dGVBdHRhY2htZW50UXVlcnksbSBhcyBmZXRjaEF0dGFjaG1lbnRzLGEgYXMgcHJvY2Vzc0F0dGFjaG1lbnRRdWVyeVJlc3VsdH07XG4iXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=
